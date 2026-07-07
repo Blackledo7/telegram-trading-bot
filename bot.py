@@ -128,6 +128,13 @@ def check_strategy(state):
     if df15.empty or df5.empty or len(df5) < 25:
         return
 
+    # نسخ حديثة من yfinance بترجع أعمدة متعددة المستويات (MultiIndex)
+    # حتى مع رمز واحد بس - نبسّطها هنا عشان نتجنب مشاكل النوع
+    if hasattr(df15.columns, "levels"):
+        df15.columns = df15.columns.get_level_values(0)
+    if hasattr(df5.columns, "levels"):
+        df5.columns = df5.columns.get_level_values(0)
+
     df15["ema50"] = ema(df15["Close"], 50)
     df5["ema20"] = ema(df5["Close"], 20)
     df5["rsi"] = rsi(df5["Close"], 14)
