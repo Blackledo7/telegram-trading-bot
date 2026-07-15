@@ -1,4 +1,7 @@
 {
-  "notified_events": [],
+  "notified_events": [
+    "Core PPI m/m_2026-07-15T08:30:00-04:00",
+    "PPI m/m_2026-07-15T08:30:00-04:00"
+  ],
   "last_signal": "شراء (Long)_2026-07-08 19"
 }
