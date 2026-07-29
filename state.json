@@ -1,7 +1,9 @@
 {
   "notified_events": [
     "Core PPI m/m_2026-07-15T08:30:00-04:00",
-    "PPI m/m_2026-07-15T08:30:00-04:00"
+    "PPI m/m_2026-07-15T08:30:00-04:00",
+    "Federal Funds Rate_2026-07-29T14:00:00-04:00",
+    "FOMC Statement_2026-07-29T14:00:00-04:00"
   ],
   "last_signal": "بيع (Short)_2026-07-27 21"
 }
